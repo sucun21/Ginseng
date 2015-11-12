@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)http://www.w3schools.com/js/tryit_view.asp?x=0.04063983308151364 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>javascript tutorial</title>
+  <meta charset="utf-8">
+  <!--<script type="text/javascript" src="js/javascript.js"></script>-->
+ </head>
+ <body>
+<table id="login">
+       <!-- <tr>
+            <td><label>User Name</label></td>
+        </tr>
+       < <tr>
+            <td colspan="2"><input class="textBox" id="fName" type="text"     maxlength="30"  required/></td>
+        </tr>-->
+        <tbody><tr>
+            <td><label>Password</label></td>
+        </tr><tr>
+            <td colspan="2"><input class="textBox" id="pass" type="text" maxlength="30" required=""></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="loginButtons" value="Login" onclick="submit()">&nbsp;&nbsp;&nbsp;
+            <input type="button" class="loginButtons" value="Cancel"></td>
+    </tr></tbody></table>
+    <div>
+      <p id="classId" class="datalist data datatable"></p>
+    </div>
+   <script>
+      function submit(){
+        var userPass=document.getElementById('pass').value;
+        var userName = document.getElementById('fName');
+       // var classList= document.getElementById('classId').className.split(/\s+/);
+       /* alert(classList.length);
+        for (var i = 0;  i < classList.length ; i++) {
+           if(classList[i] == 'da') {
+              document.getElementById('classId').innerHTML = "this value is";
+           }
+           else if (classList[i] == 'datatable') {
+              document.getElementById('classId').innerHTML = "this value is +";
+           }
+           else (classList[i] == 'datalist') 
+             document.getElementById('classId').innerHTML = "this value is -";
+           
+        };
+         //document.getElementsByClassName("datatable")[0].innerHTML = userPass.value;*/
+        // alert(userPass.length);
+         //document.getElementsByClassName("datalist")[0].innerHTML = userPass.value;
+         var count = "";
+         for (var i = 0 ; i <= userPass ; i++){
+            alert(); 
+           count += i;
+          // alert(count);
+           if (count == 5) {
+                break;
+            }
+           
+          }
+          document.getElementsByClassName('datalist')[0].innerHTML = count;
+         }
+         
+  </script>
+ 
+
+</body></html>
